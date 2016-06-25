@@ -9,10 +9,30 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SwiftChartTester.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SwiftChartTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>A525B4331D1BC6E800DEEBFA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A525B4421D1BC71B00DEEBFA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A52756A11D1C4ED60064315A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
