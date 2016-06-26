@@ -36,9 +36,15 @@ public class AbstractLineChart {
 	var xRange: ValueRange {
 		return ValueRange(min: .infinity, max: -.infinity)
 	}
+	public static func getXRange(chart: AbstractLineChart) -> ValueRange {
+		return chart.xRange
+	}
 
 	var yRange: ValueRange {
 		return ValueRange(min: .infinity, max: -.infinity)
+	}
+	public static func getYRange(chart: AbstractLineChart) -> ValueRange {
+		return chart.yRange
 	}
 }
 

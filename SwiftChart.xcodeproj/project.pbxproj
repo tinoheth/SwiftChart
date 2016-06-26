@@ -17,9 +17,10 @@
 		A525B4581D1BC77500DEEBFA /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A525B4571D1BC77500DEEBFA /* ChartView.swift */; };
 		A525B45A1D1BC7AB00DEEBFA /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A525B4591D1BC7AB00DEEBFA /* LineChart.swift */; };
 		A525B45D1D1BDA1E00DEEBFA /* SwiftChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A525B4341D1BC6E800DEEBFA /* SwiftChart.framework */; };
+		A555E07B1D1FD8E6009F86C5 /* Axes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555E07A1D1FD8E6009F86C5 /* Axes.swift */; };
+		A555E07D1D1FD93E009F86C5 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555E07C1D1FD93E009F86C5 /* Setting.swift */; };
 		A58E9F561D1EB21300D9F3D5 /* Scales.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E9F551D1EB21300D9F3D5 /* Scales.swift */; };
 		A58E9F581D1EB26E00D9F3D5 /* ValueBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E9F571D1EB26E00D9F3D5 /* ValueBasics.swift */; };
-		A58E9F5A1D1EB2AF00D9F3D5 /* Legends.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E9F591D1EB2AF00D9F3D5 /* Legends.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +37,10 @@
 		A525B4531D1BC71B00DEEBFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A525B4571D1BC77500DEEBFA /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		A525B4591D1BC7AB00DEEBFA /* LineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		A555E07A1D1FD8E6009F86C5 /* Axes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Axes.swift; sourceTree = "<group>"; };
+		A555E07C1D1FD93E009F86C5 /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		A58E9F551D1EB21300D9F3D5 /* Scales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scales.swift; sourceTree = "<group>"; };
 		A58E9F571D1EB26E00D9F3D5 /* ValueBasics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueBasics.swift; sourceTree = "<group>"; };
-		A58E9F591D1EB2AF00D9F3D5 /* Legends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legends.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +86,11 @@
 				A525B4371D1BC6E800DEEBFA /* SwiftChart.h */,
 				A525B4391D1BC6E800DEEBFA /* Info.plist */,
 				A525B4571D1BC77500DEEBFA /* ChartView.swift */,
-				A58E9F591D1EB2AF00D9F3D5 /* Legends.swift */,
+				A555E07A1D1FD8E6009F86C5 /* Axes.swift */,
 				A58E9F571D1EB26E00D9F3D5 /* ValueBasics.swift */,
 				A58E9F551D1EB21300D9F3D5 /* Scales.swift */,
 				A525B4591D1BC7AB00DEEBFA /* LineChart.swift */,
+				A555E07C1D1FD93E009F86C5 /* Setting.swift */,
 			);
 			path = SwiftChart;
 			sourceTree = "<group>";
@@ -217,9 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A58E9F5A1D1EB2AF00D9F3D5 /* Legends.swift in Sources */,
 				A525B45A1D1BC7AB00DEEBFA /* LineChart.swift in Sources */,
+				A555E07B1D1FD8E6009F86C5 /* Axes.swift in Sources */,
 				A58E9F561D1EB21300D9F3D5 /* Scales.swift in Sources */,
+				A555E07D1D1FD93E009F86C5 /* Setting.swift in Sources */,
 				A58E9F581D1EB26E00D9F3D5 /* ValueBasics.swift in Sources */,
 				A525B4581D1BC77500DEEBFA /* ChartView.swift in Sources */,
 			);

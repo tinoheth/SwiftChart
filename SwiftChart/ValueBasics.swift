@@ -26,4 +26,9 @@ public struct ValueRange {
 	init() {
 		self.init(min: 0, max: 1)
 	}
+
+	public mutating func merge(other: ValueRange) {
+		min = Swift.min(min, other.min)
+		max = Swift.max(max, other.max)
+	}
 }

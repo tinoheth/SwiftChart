@@ -51,21 +51,25 @@ class DetailViewController: UIViewController {
 
 	@IBAction func zoomOut(sender: AnyObject) {
 		xRange *= 1.2
-		chartView.xRange = ValueRange(min: xStart, max: xStart + xRange)
+		chartView.abscissa.range.set(ValueRange(min: xStart, max: xStart + xRange))
+		chartView.setNeedsLayout()
 	}
 
 	@IBAction func zoomIn(sender: AnyObject) {
 		xRange /= 1.2
-		chartView.xRange = ValueRange(min: xStart, max: xStart + xRange)
+		chartView.abscissa.range.set(ValueRange(min: xStart, max: xStart + xRange))
+		chartView.setNeedsLayout()
 	}
 
 	@IBAction func moveLeft(sender: AnyObject) {
 		xStart -= 25
-		chartView.xRange = ValueRange(min: xStart, max: xStart + xRange)
+		chartView.abscissa.range.set(ValueRange(min: xStart, max: xStart + xRange))
+		chartView.setNeedsLayout()
 	}
 
 	@IBAction func moveRight(sender: AnyObject) {
 		xStart += 25
-		chartView.xRange = ValueRange(min: xStart, max: xStart + xRange)
+		chartView.abscissa.range.set(ValueRange(min: xStart, max: xStart + xRange))
+		chartView.setNeedsLayout()
 	}
 }
