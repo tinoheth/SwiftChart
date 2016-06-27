@@ -18,6 +18,7 @@ import Foundation
 */
 public class Setting<T> {
 	let valueFallback: () -> T
+	public var didSet: ((T) -> Void)?
 
 	public init(value: T? = nil, fallback: () -> T) {
 		valueFallback = fallback
@@ -41,11 +42,13 @@ public class Setting<T> {
 	public func set(value: T) {
 		self.mValue = value
 		isUserValue = true
+		didSet?(value)
 	}
 
 	public func reset() {
 		mValue = valueFallback()
 		isUserValue = false
+		didSet?(mValue)
 	}
 
 	func update(value: T) {

@@ -58,6 +58,9 @@ public class Abscissa {
 			}
 			return result
 		}
+		range.didSet = {
+			self.factor = self.size / CGFloat($0.size)
+		}
 	}
 
 	private func tickmarkGenerator(range: ValueRange) -> [ValueType] {

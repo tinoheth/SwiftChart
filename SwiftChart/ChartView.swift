@@ -51,6 +51,12 @@ public class ChartView: UIView {
 		layoutGraphs()
 	}
 
+	public func blockRefresh(@noescape block: ChartView -> Void) -> Self {
+		block(self)
+		layoutGraphs()
+		return self
+	}
+	
 	func layoutGraphs() {
 		// Fast and suited for animation... don't need those now ;-)
 		//let p = CGPoint(x: xScale.transformValue(0, offset: mXRange.value.min) * xFactor, y: yScale.transformValue(0, offset: mYRange.value.min) * yFactor)
